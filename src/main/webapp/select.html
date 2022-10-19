@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Beer</title>
+</head>
+<body>
+<h1>
+    Choose beer
+</h1>
+<br/>
+
+<form method="post" action="SelectBeerServlet">
+    <table>
+        <tr>
+            <td>Choose type of beer</td>
+            <td>
+                <select name="taste">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="fruit">Fruit</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Russian or Import</td>
+            <td>
+                <select name="country">
+                    <option value="import">Import</option>
+                    <option value="russian">Russian</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Chose some checkpoints</td>
+            <td>
+                <input type="checkbox" name="alcoholic" value="Yes">non-alcoholic</input>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Throw"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
